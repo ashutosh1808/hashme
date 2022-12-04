@@ -1,7 +1,6 @@
 from flask import Flask,render_template,request
 from hashlib import *
 
-
 app=Flask(__name__)
 @app.route("/")
 def home():
