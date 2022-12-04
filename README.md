@@ -1,5 +1,5 @@
 # HashME
-This application hashes the data given by the user. It uses the hashlib library in Python.
+This application hashes the data given by the user. It uses the hashlib library in Python. A hash is a function that meets the encrypted demands needed to solve for a blockchain computation.
 
 
 ## Installation of libraries
