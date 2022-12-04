@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title> HashME | Home </title>
+</head>
+<style>
+	*{
+		font-size:22px;	
+		font-family:Arial;
+	}
+	h1{
+		font-size:30px;
+	}
+	input[type="submit"]{
+		font-size:21px;
+	}
+</style>
+<script>
+	function check(){
+		var data=document.getElementById("data").value;
+		if(data==""){
+			alert("enter something");
+			return false;
+		}
+	}
+</script>
+<body>
+<center>
+<h1> Hash your data using HashME </h1>
+<hr>
+<br>
+<form>
+<textarea value="" id="data" name="data" cols="90" rows="15" style="resize:none;"></textarea> 
+<br><br>
+<input type="submit" value="Hash!" onclick="return check()">
+</center>
+</form>
+</body>
+</html>
