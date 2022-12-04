@@ -7,13 +7,13 @@ def home():
 	return render_template("index.html")
 
 
-@app.route("/hash")
+@app.route("/hash",methods=["POST"])
 def hash():
-	data=request.args.get["data"]
+	data=request.form["data"]
 	new_data,hashed_data="",""
 	new_data=sha256(data.encode())
 	hashed_data=new_data.hexdigest()
-	msg="Hashed value: "+str(hashed_data) 
+	msg="Hashed value of "+data+" is "+str(hashed_data) 
 	return render_template("index.html",msg=msg)
 
 if __name__=="__main__":
