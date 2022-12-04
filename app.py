@@ -15,7 +15,7 @@ def hash():
 	new_data=sha256(data.encode())
 	hashed_data=new_data.hexdigest()
 	msg="Hashed value: "+str(hashed_data) 
-	return render_template("home.html")
+	return render_template("home.html",msg=msg)
 
 if __name__=="__main__":
 	app.run(debug=True,use_reloader=True)
