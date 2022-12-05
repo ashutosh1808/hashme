@@ -15,7 +15,7 @@ Install my-project with Command Prompt
 Clone the project
 
 ```bash
-  git clone https://github.com/ashutosh1808/app_hashme
+  git clone https://github.com/ashutosh1808/hashme.git
 ```
 
 Go to the project directory
